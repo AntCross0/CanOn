@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.paws-pattern {
+
+  background-image: url('./media/paws-pattern.png');
+  background-repeat: repeat;
+  background-size: 26rem;
+
+}
+
+.paws-clip {
+  background-image: url('./media/background.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
+
+}
+
+/*MOBILE 390PX*/
+@media (min-width: 300px) {
+  .paws-pattern {
+    clip-path: polygon(0.51% 47.48%, 0% 0%, 100% 0%, 99.49% 44.43%, 95.34% 41.48%, 90.9% 39.18%, 81.54% 37.11%, 67.93% 39.97%, 58.23% 45.52%, 42.41% 49.31%, 19.77% 49.03%);
+
+  }
+}
+
+@media (min-width: 500px) {
+  .paws-pattern {
+    clip-path: polygon(0.20% 51.14%, 0% 0%, 100% 0%, 99.87% 47.54%, 96.51% 42.98%, 91.73% 40.54%, 84.01% 39.04%, 74.89% 38.87%, 68.86% 41.59%, 44.76% 51.07%, 29.39% 54.05%, 14.73% 52.96%);
+
+  }
+}
+
+
+
+/*TABLET 768PX*/
+@media (min-width: 768px) {
+  .paws-pattern {
+    clip-path: polygon(0.0% 75.12%, 0% 0%, 100% 0%, 99.87% 71.66%, 93.51% 58.7%, 78.93% 53.68%, 65.81% 63.7%, 61.69% 68.82%, 55.06% 73.97%, 44.96% 77.63%, 26.39% 79.52%, 9.73% 78.30%);
+
+  }
+}
+
+/*DESKTOP 990X*/
+@media (min-width: 1024px) {
+  .paws-pattern {
+    clip-path: polygon(0.19% 84.61%, 0% 0%, 100% 0%, 100% 78.04%, 97.62% 72.65%, 91.37% 61.81%, 77.99% 58.56%, 69.36% 63.43%, 56.49% 81.42%, 48.68% 85.62%, 35.1% 89.42%, 17.41% 89.01%, 8.46% 87.65%);
+
+  }
+}
