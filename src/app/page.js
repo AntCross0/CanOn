@@ -4,6 +4,7 @@ import DownloadTabs from './components/DownloadTabs';
 import doggy from './media/doggy.webp';
 import bonetitle from './media/Bone-title.svg';
 import ImageSection from './components/ImageSection';
+import { Slider } from './components/Slider';
 
 export default function Home() {
   return (
@@ -21,17 +22,17 @@ export default function Home() {
         </div>
         <Image className='z-0 transition-all absolute h-auto right-[7%] w-[300px] -bottom-[40%] sm:right-[5%] sm:-bottom-[40%] md:right-[3%] md:-bottom-16 lg:right-14 lg:-bottom-4' priority={false} src={doggy} alt='doggy doggy' />
       </div>
-      <div className='relative w-full mt-56 md:mt-28'>
+      <div className='relative w-full mt-52 md:mt-10'>
         <Image className=' w-[48rem] h-auto mx-auto' priority={false} src={bonetitle} alt='Bone title' />
       </div>
-
-      <div>
-
+      <div className='flex flex-col gap-4'>
         <ImageSection />
+        <h4 className='quote mt-4 sm:mt-20 px-2 mx-auto w-full text-2xl max-w-[900px] font-bold'>Get in touch with hundred of pet lovers who love share any moment. 
+Are you one of those? Join the app and discover this whole new world.</h4>
       </div>
 
-      <div className='text-black mt-12'>
-        otro contenido
+      <div className='mt-4'>
+        <Slider />
       </div>
     </div>
   )
