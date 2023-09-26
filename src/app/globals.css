@@ -5,13 +5,19 @@
 
 
 
+
+.chain-clip {
+  background-image: url(./media/Clippath-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .paws-clip {
   background-image: url('./media/background.svg');
   background-repeat: no-repeat;
   background-size: cover;
 
 }
-
 /*MOBILE 390PX*/
 @media (min-width: 390px) {
   .paws-clip {

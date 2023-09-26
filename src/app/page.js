@@ -27,11 +27,10 @@ export default function Home() {
       </div>
       <div className='flex flex-col gap-4'>
         <ImageSection />
-        <h4 className='quote mt-4 sm:mt-20 px-2 mx-auto w-full text-2xl max-w-[900px] font-bold'>Get in touch with hundred of pet lovers who love share any moment. 
-Are you one of those? Join the app and discover this whole new world.</h4>
+        <h4 className='quote mt-4 sm:mt-20 px-2 mx-auto w-full text-2xl max-w-[900px] font-bold'>Get in touch with hundred of pet lovers who love share any moment. Are you one of those? Join the app and discover this whole new world.</h4>
       </div>
-
-      <div className='mt-4'>
+      <div className=''>
+        
         <Slider />
       </div>
     </div>
