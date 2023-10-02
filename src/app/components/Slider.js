@@ -41,23 +41,21 @@ export const Slider = () => {
         }
     ]
 
-
-
-
-
     return (
-        <div className="relative text-white ">
-            
-            <div className="my-12">
-            
-            <svg  width="1280" height="861" viewBox="0 0 1280 861" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full absolute inline-block h-fit">
-                <path d="M0 38.4714C0 38.4714 233 -1.64106e-10 640 0C1047 1.64106e-10 1280 38.4714 1280 38.4714L1280 713.617L1076.5 861C1076.5 861 928.787 809.566 825.5 784.057C741.548 763.324 661.5 751.546 597 752.63C532.5 753.714 450.625 765.092 237 801.938C23.375 838.784 0 713.617 0 713.617L0 38.4714Z" fill="#1E1E1E"/>
-            </svg>
-            
-            </div>
-            
-            {/* <div style={{ clipPath: 'polygon(0% 6%, 10% 4%, 15% 3%, 29% 2%,50% 0%, 100% 0%, 100% 85%, 90% 100%, 80% 85%, 28% 100%, 16% 100%, 11% 100%, 6% 100%, 1% 100%, 0% 71% )'}}
-             className="w-full max-w-6xl h-[861px] bg-black p-12" >hola</div> */}
+        <div className="relative min-w-[640px] h-full first-of-type:pl-24 sm:first-of-type:pl-2 p-2 md:justify-center text-white flex flex-row items-center gap-2">
+            {
+                slides.map((slide, index) => (
+                    
+                    <div key={index} className="group relative rounded">
+                        
+                         <div className="absolute w-full h-full  bg-black/40 rounded-[10px] md:rounded-[18px]"></div>
+                        <div className="absolute left-4 top-2">
+                            {slide.icon}
+                         </div>
+                         <img src={slide.img} alt={slide.name} className="rounded w-[220px] h-auto" />
+                    </div>
+                ))
+            }
         </div>
     )
 }

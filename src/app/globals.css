@@ -7,9 +7,10 @@
 
 
 .chain-clip {
-  background-image: url(./media/Clippath-2.svg);
+  background-image: url(./media/Chain.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover
+  
 }
 
 .paws-clip {
@@ -22,6 +23,12 @@
 @media (min-width: 390px) {
   .paws-clip {
     background-size: cover
+  }
+}
+
+@media (min-width: 756px) {
+  .chain-clip {
+    background-size: 100%,90%
   }
 }
 

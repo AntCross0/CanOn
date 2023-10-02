@@ -29,9 +29,16 @@ export default function Home() {
         <ImageSection />
         <h4 className='quote mt-4 sm:mt-20 px-2 mx-auto w-full text-2xl max-w-[900px] font-bold'>Get in touch with hundred of pet lovers who love share any moment. Are you one of those? Join the app and discover this whole new world.</h4>
       </div>
-      <div className=''>
-        
-        <Slider />
+      <div className='transition-all relative chain-clip min-h-[440px] h-full sm:h-[400px] md:h-[800px] w-full overflow-hidden'>
+        <div className='my-8 sm:my-12 font-bold text-lg sm:text-2xl text-white p-2 sm:p-8'>
+            <h4>¡Add filters, effects, music, stickers and more!</h4>
+        </div>
+        <div className='relative overflow-x-auto'>
+          <Slider />
+        </div>
+      <div>
+      
+      </div>
       </div>
     </div>
   )
