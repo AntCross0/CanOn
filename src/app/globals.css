@@ -5,12 +5,16 @@
 
 
 
+.medal-clip {
+  background-image: url(./media/Medal.svg);;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 .chain-clip {
-  background-image: url(./media/Chain.svg);
+  background-image: url(./media/medal-2.svg);
   background-repeat: no-repeat;
   background-size: cover
-  
 }
 
 .paws-clip {

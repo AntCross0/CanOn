@@ -29,17 +29,23 @@ export default function Home() {
         <ImageSection />
         <h4 className='quote mt-4 sm:mt-20 px-2 mx-auto w-full text-2xl max-w-[900px] font-bold'>Get in touch with hundred of pet lovers who love share any moment. Are you one of those? Join the app and discover this whole new world.</h4>
       </div>
-      <div className='transition-all relative chain-clip min-h-[440px] h-full sm:h-[400px] md:h-[800px] w-full overflow-hidden'>
-        <div className='my-8 sm:my-12 font-bold text-lg sm:text-2xl text-white p-2 sm:p-8'>
+      <div className='transition-all relative chain-clip min-h-[540px] h-full sm:h-[400px] md:h-[660px] lg:h-[1024px] w-full overflow-hidden z-50'>
+        <div className='mt-8 mb-4 pl-4 w-[80%] font-bold text-lg text-white 
+        sm:text-2xl sm:my-8
+        md:w-[70%] md:my-12 md:pl-8
+        lg:w-[50%] lg:my-14 lg:pl-12
+        '>
             <h4>¡Add filters, effects, music, stickers and more!</h4>
         </div>
-        <div className='relative overflow-x-auto'>
+        <div className='relative overflow-x-auto '>
           <Slider />
         </div>
       <div>
-      
       </div>
       </div>
+      {/* <div className='relative  h-20'>
+        <div className='static lg:-top-72 xl:-top-56 w-full h-[416px]  medal-clip z-0'></div>
+      </div> */}
     </div>
   )
 }
