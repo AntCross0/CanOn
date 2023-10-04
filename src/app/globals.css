@@ -5,7 +5,7 @@
 
 
 .chain-clip {
-  background-image: url(./media/medal-2.svg);
+  background-image: url(./../../public/medal-2.svg);
   background-repeat: no-repeat;
   background-size: auto;
   width: 100%;
@@ -13,7 +13,7 @@
 }
 
 .bg-grid {
-  background-image: url('./media/grid.svg');
+  background-image: url('./../../public/grid.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -24,7 +24,7 @@
 }
 
 .paws-clip {
-  background-image: url('./media/background.svg');
+  background-image: url('./../../public/background.svg');
   background-repeat: no-repeat;
   background-size: cover;
 

@@ -2,9 +2,9 @@ import React from 'react'
 import Image from 'next/image';
 
 
-import pawstore from '../media/PawsStore.png';
-import appstore from '../media/Disponible-appstore-ENG.png';
-import googleplay from '../media/Disponible-google-play-ENG.png';
+const pawstore = 'https://res.cloudinary.com/diccwoblx/image/upload/v1696447031/Can%20on/PawsStore_zupmlb.png';
+const appstore = 'https://res.cloudinary.com/diccwoblx/image/upload/v1696447029/Can%20on/Disponible-appstore-ENG_lhvwlb.png';
+const googleplay = 'https://res.cloudinary.com/diccwoblx/image/upload/v1696447029/Can%20on/Disponible-google-play-ENG_vhjksp.png';
 
 export default function DownloadTabs() {
 
@@ -34,7 +34,7 @@ export default function DownloadTabs() {
             {stores.map((store) => (
                 <li key={store.name}>
                     <a href={store.link}>
-                        <Image className='h-auto w-26' src={store.img} alt={store.name} />
+                        <img className='h-auto w-26' src={store.img} alt={store.name} />
                     </a>
                 </li>
             ))}
