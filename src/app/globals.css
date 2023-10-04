@@ -15,11 +15,11 @@
 .bg-grid {
   background-image: url('./media/grid.svg');
   background-size: cover;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
 }
 
 
-.dog-chasing-medal{
+.dog-chasing-medal {
   display: none;
 }
 
@@ -29,6 +29,7 @@
   background-size: cover;
 
 }
+
 /*MOBILE 390PX*/
 @media (min-width: 390px) {
   .paws-clip {
@@ -41,57 +42,56 @@
   .paws-clip {
     background-size: contain
   }
-  
+
 }
 
 /*DESKTOP 990X*/
-@media (min-width: 990px) {
-  
- 
-}
+@media (min-width: 990px) {}
 
 
 @media (min-width: 640px) {
-  .chain-clip{
+  .chain-clip {
     height: 600px;
     background-size: contain;
   }
-  .dog-chasing-medal{
+
+  .dog-chasing-medal {
     display: block
   }
 }
+
 @media (min-width: 700px) {
-  .chain-clip{
+  .chain-clip {
     height: 680px;
   }
-  
+
 }
 
 /*TABLET 768PX*/
 @media (min-width: 768px) {
-  .chain-clip{
+  .chain-clip {
     height: 700px;
     background-size: 100%;
-  }  
+  }
 }
 
 @media (min-width: 830px) {
-  .chain-clip{
+  .chain-clip {
     height: 780px;
   }
- 
+
 }
 
 @media (min-width: 920px) {
-  .chain-clip{
+  .chain-clip {
     height: 840px;
   }
- 
+
 }
 
 /*DESKTOP 990X*/
 @media (min-width: 1024px) {
-  .chain-clip{
+  .chain-clip {
     height: 1024px;
   }
 }
