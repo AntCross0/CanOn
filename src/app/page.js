@@ -5,7 +5,8 @@ import doggy from './media/doggy.webp';
 import bonetitle from './media/Bone-title.svg';
 import ImageSection from './components/ImageSection';
 import { Slider } from './components/Slider';
-
+import iconDollar from './media/icon Dollar.svg';
+import dogchasingmedal from './media/dog-chasing-medal.svg'
 export default function Home() {
   return (
 
@@ -29,23 +30,33 @@ export default function Home() {
         <ImageSection />
         <h4 className='quote mt-4 sm:mt-20 px-2 mx-auto w-full text-2xl max-w-[900px] font-bold'>Get in touch with hundred of pet lovers who love share any moment. Are you one of those? Join the app and discover this whole new world.</h4>
       </div>
-      <div className='transition-all relative chain-clip min-h-[540px] h-full sm:h-[400px] md:h-[660px] lg:h-[1024px] w-full overflow-hidden z-50'>
-        <div className='mt-8 mb-4 pl-4 w-[80%] font-bold text-lg text-white 
-        sm:text-2xl sm:my-8
-        md:w-[70%] md:my-12 md:pl-8
-        lg:w-[50%] lg:my-14 lg:pl-12
+      <div className='transition-all z-50 relative chain-clip w-full overflow-hidden z-50'>
+        <div className='mt-14 mb-4 pl-8 w-[80%] font-bold text-lg text-white 
+        sm:text-2xl sm:my-12
+        md:w-[70%] md:my-14 md:pl-8
+        lg:w-[50%] lg:my-16 lg:pl-12
         '>
             <h4>¡Add filters, effects, music, stickers and more!</h4>
         </div>
-        <div className='relative overflow-x-auto '>
+        <div className='relative overflow-x-auto'>
           <Slider />
         </div>
       <div>
       </div>
       </div>
-      {/* <div className='relative  h-20'>
-        <div className='static lg:-top-72 xl:-top-56 w-full h-[416px]  medal-clip z-0'></div>
-      </div> */}
+      <div className='relative grid grid-cols-1 sm:grid-cols-2 z-0 my-12'>
+        <div className='w-full'>
+            <div className='h-fit bg-primary min-w-[280px] w-1/2 min-h-[450px] mx-auto rounded-lg  shadow-[15px_15px_0px_10px] p-8 flex flex-col gap-8 items-center justify-center bg-grid'>
+              <Image className='w-32 h-auto mx-auto' src={iconDollar} width={300} height={300} />
+              <h4 className='font-bold text-white text-2xl text-center'>Get prizes for liked post media</h4>
+                  <button className=' p-2 rounded bg-red-400 text-white font-bold transition-all hover:bg-red-500'>Downloand</button>
+              
+            </div>
+        </div>
+        <div className='dog-chasing-medal'>
+          <Image src={dogchasingmedal} className='h-full' width={900} height={900}  />
+        </div>
+      </div>
     </div>
   )
 }

@@ -4,17 +4,23 @@
 
 
 
-
-.medal-clip {
-  background-image: url(./media/Medal.svg);;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .chain-clip {
   background-image: url(./media/medal-2.svg);
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: auto;
+  width: 100%;
+  height: 400px;
+}
+
+.bg-grid {
+  background-image: url('./media/grid.svg');
+  background-size: cover;
+  background-repeat: no-repeat;  
+}
+
+
+.dog-chasing-medal{
+  display: none;
 }
 
 .paws-clip {
@@ -30,22 +36,62 @@
   }
 }
 
-@media (min-width: 756px) {
-  .chain-clip {
-    background-size: 100%,90%
-  }
-}
-
 /*TABLET 768PX*/
 @media (min-width: 768px) {
   .paws-clip {
     background-size: contain
   }
+  
 }
 
 /*DESKTOP 990X*/
 @media (min-width: 990px) {
-  .paws-clip {
-    background-size: contain
+  
+ 
+}
+
+
+@media (min-width: 640px) {
+  .chain-clip{
+    height: 600px;
+    background-size: contain;
+  }
+  .dog-chasing-medal{
+    display: block
+  }
+}
+@media (min-width: 700px) {
+  .chain-clip{
+    height: 680px;
+  }
+  
+}
+
+/*TABLET 768PX*/
+@media (min-width: 768px) {
+  .chain-clip{
+    height: 700px;
+    background-size: 100%;
+  }  
+}
+
+@media (min-width: 830px) {
+  .chain-clip{
+    height: 780px;
+  }
+ 
+}
+
+@media (min-width: 920px) {
+  .chain-clip{
+    height: 840px;
+  }
+ 
+}
+
+/*DESKTOP 990X*/
+@media (min-width: 1024px) {
+  .chain-clip{
+    height: 1024px;
   }
 }

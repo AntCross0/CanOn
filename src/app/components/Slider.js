@@ -46,12 +46,16 @@ export const Slider = () => {
             {
                 slides.map((slide, index) => (
                     
-                    <div key={index} className="group relative rounded">
+                    <div key={index} className="group relative rounded overflow-hidden">
                         
-                         <div className="absolute w-full h-full  bg-black/40 rounded-[10px] md:rounded-[18px]"></div>
-                        <div className="absolute left-4 top-2">
+                         
+                        
+                        
+                         <div className="absolute w-full h-full bg-black/40 rounded-[10px] sm:rounded-[12px] md:rounded-[16px] lg:rounded-[18px] z-10"></div>
+                        <div className="absolute left-4 top-2 z-50">
                             {slide.icon}
                          </div>
+                         
                          <img src={slide.img} alt={slide.name} className="rounded w-[220px] h-auto" />
                     </div>
                 ))
