@@ -50,7 +50,7 @@ export default function Home() {
           <div className='h-fit bg-primary min-w-[280px] w-1/2 min-h-[450px] mx-auto rounded-lg  shadow-[15px_15px_0px_10px] p-8 flex flex-col gap-8 items-center justify-center bg-grid'>
             <Image className='w-32 h-auto mx-auto' src={iconDollar} width={300} height={300} />
             <h4 className='font-bold text-white text-2xl text-center'>Get prizes for liked post media</h4>
-            <button className=' p-2 rounded bg-red-400 text-white font-bold transition-all hover:bg-red-500'>Downloand</button>
+            <button className=' p-2 rounded bg-red-400 text-white font-bold transition-all hover:bg-red-500'>Download</button>
 
           </div>
         </div>
